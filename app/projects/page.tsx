@@ -1,19 +1,12 @@
-import Link from "next/link";
 import { projects } from "@/content/projects";
 
-export const metadata = { title: "projects — Ved Vedere" };
+export const metadata = { title: "Projects — Ved Vedere" };
 
 export default function ProjectsPage() {
   return (
-    <main className="flex flex-col items-center px-8 py-16">
+    <main className="flex flex-col items-center px-8 py-20">
       <div className="w-full max-w-lg">
-        <nav className="mb-16 text-base text-[var(--muted)] text-center">
-          <Link href="/" className="underline-slide hover:text-[var(--foreground)] transition-colors">
-            Ved Vedere
-          </Link>
-        </nav>
-
-        <h2 className="text-3xl mb-12 text-center">projects</h2>
+        <h2 className="text-3xl mb-12 text-center">Projects</h2>
 
         <ul className="flex flex-col gap-8">
           {projects.map((project) => (

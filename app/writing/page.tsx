@@ -1,21 +1,15 @@
 import Link from "next/link";
 import { getAllPosts } from "@/lib/mdx";
 
-export const metadata = { title: "writing — Ved Vedere" };
+export const metadata = { title: "Writing — Ved Vedere" };
 
 export default function WritingPage() {
   const posts = getAllPosts();
 
   return (
-    <main className="flex flex-col items-center px-8 py-16">
+    <main className="flex flex-col items-center px-8 py-20">
       <div className="w-full max-w-lg">
-        <nav className="mb-16 text-base text-[var(--muted)] text-center">
-          <Link href="/" className="underline-slide hover:text-[var(--foreground)] transition-colors">
-            Ved Vedere
-          </Link>
-        </nav>
-
-        <h2 className="text-3xl mb-12 text-center">writing</h2>
+        <h2 className="text-3xl mb-12 text-center">Writing</h2>
 
         {posts.length === 0 ? (
           <p className="text-[var(--muted)] text-center">no posts yet.</p>
