@@ -32,6 +32,17 @@ export default function Home() {
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
             </a>
+            <a href="https://vedere.bearblog.dev" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--foreground)] transition-colors" aria-label="Bear Blog">
+              <svg viewBox="0 0 68 26" fill="none" className="h-5 w-auto">
+                <circle cx="8" cy="9" r="6" stroke="currentColor" strokeWidth="2.5"/>
+                <line x1="14" y1="9" x2="14" y2="22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+                <circle cx="25" cy="15" r="5" fill="currentColor"/>
+                <rect x="28" y="11" width="12" height="8" rx="4" fill="currentColor"/>
+                <circle cx="43" cy="15" r="5" fill="currentColor"/>
+                <circle cx="60" cy="9" r="6" stroke="currentColor" strokeWidth="2.5"/>
+                <line x1="54" y1="9" x2="54" y2="22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+              </svg>
+            </a>
           </div>
         </div>
 
