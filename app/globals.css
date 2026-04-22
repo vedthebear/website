@@ -4,6 +4,7 @@
   --background: #F6F1EB;
   --foreground: #1a1a1a;
   --muted: #888888;
+  --link: #1a5c8a;
 }
 
 @theme inline {
@@ -79,9 +80,24 @@ body {
   margin-bottom: 0.75rem;
 }
 
+.text-link {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.text-link:hover {
+  opacity: 0.75;
+}
+
 .prose-mdx a {
+  color: var(--link);
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.prose-mdx a:hover {
+  opacity: 0.75;
 }
 
 .prose-mdx code {

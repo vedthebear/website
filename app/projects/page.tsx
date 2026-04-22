@@ -5,29 +5,27 @@ export const metadata = { title: "Projects — Ved Vedere" };
 export default function ProjectsPage() {
   return (
     <main className="flex flex-col items-center px-8 py-20">
-      <div className="w-full max-w-lg">
-        <h2 className="text-3xl mb-12 text-center">Projects</h2>
+      <div className="w-full max-w-2xl">
+        <h2 className="text-5xl mb-12">Projects</h2>
 
-        <ul className="flex flex-col gap-8">
+        <ul className="flex flex-col divide-y divide-[var(--muted)]/20">
           {projects.map((project) => (
-            <li key={project.name} className="text-center">
-              {project.url ? (
-                <a href={project.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col gap-1">
-                  <span className="text-xl underline-slide-child inline-block">
+            <li key={project.name} className="py-8 first:pt-0 last:pb-0">
+              <p className="text-lg leading-relaxed text-[var(--foreground)]">
+                {project.url ? (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-link"
+                  >
                     {project.name}
-                  </span>
-                  <span className="text-base text-[var(--muted)]">
-                    {project.description} — {project.year}
-                  </span>
-                </a>
-              ) : (
-                <div className="flex flex-col gap-1">
-                  <span className="text-xl">{project.name}</span>
-                  <span className="text-base text-[var(--muted)]">
-                    {project.description} — {project.year}
-                  </span>
-                </div>
-              )}
+                  </a>
+                ) : (
+                  <span className="font-semibold">{project.name}</span>
+                )}{" "}
+                {project.blurb}
+              </p>
             </li>
           ))}
         </ul>

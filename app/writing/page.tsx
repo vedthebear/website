@@ -8,15 +8,15 @@ export default function WritingPage() {
 
   return (
     <main className="flex flex-col items-center px-8 py-20">
-      <div className="w-full max-w-lg">
-        <h2 className="text-3xl mb-12 text-center">Writing</h2>
+      <div className="w-full max-w-2xl">
+        <h2 className="text-5xl mb-12">Writing</h2>
 
         {posts.length === 0 ? (
-          <p className="text-[var(--muted)] text-center">no posts yet.</p>
+          <p className="text-[var(--muted)]">no posts yet.</p>
         ) : (
-          <ul className="flex flex-col gap-8">
+          <ul className="flex flex-col divide-y divide-[var(--muted)]/20">
             {posts.map((post) => (
-              <li key={post.slug} className="text-center">
+              <li key={post.slug} className="py-8 first:pt-0 last:pb-0">
                 <Link href={`/writing/${post.slug}`} className="group flex flex-col gap-1">
                   <span className="text-xl underline-slide-child inline-block">
                     {post.title}
