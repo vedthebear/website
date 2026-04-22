@@ -34,15 +34,15 @@ export default function Home() {
         </div>
 
         {/* Body text */}
-        <div className="flex flex-col gap-5 text-lg leading-relaxed text-[var(--foreground)]">
+        <div className="flex flex-col gap-5 text-xl leading-relaxed text-black">
           <p>
-            I study mathematics and computation at UCLA. I took a break from school to move to San Francisco and join the founding team of Bear (YC F25) as an engineer. After we raised a seed round, I decided to return to UCLA to start my next chapter.
+            I study mathematics and computation at UCLA. I took a break from school to move to San Francisco and join the founding team of <a href="https://usebear.ai" target="_blank" rel="noopener noreferrer" className="text-link">Bear (YC F25)</a> as an engineer. After we raised a seed round, I decided to return to UCLA to start my next chapter.
           </p>
           <p>
-            Now, I&apos;m obsessed with applied machine learning research, specifically on language models, RL, and computer use. I think the next five years of this work are going to matter a lot, and I want to be close to where it&apos;s happening.
+            Now, I'm obsessed with applied machine learning research, specifically on language models, RL, and computer use. I think the next five years of this work are going to <a href="https://ai-2027.com/" target="_blank" rel="noopener noreferrer" className="text-link">matter a lot</a>, and I want to be close to where it's happening.
           </p>
           <p>
-            I spend most of my time these days tinkering with Claude Code, reading papers, running experiments, and writing about what I&apos;m learning. Outside of that, I read a lot and play sports. I was previously a top 5 badminton player in the USA.
+            I spend most of my time these days <a href="https://github.com/vedthebear/" target="_blank" rel="noopener noreferrer" className="text-link">tinkering with Claude Code</a>, reading papers, running experiments, and <a href="https://vedere.bearblog.dev/" target="_blank" rel="noopener noreferrer" className="text-link">writing</a> about what I'm learning. Outside of that, I read a lot and play sports. I was previously a top 5 badminton player in the USA.
           </p>
           <p>I love learning.</p>
           <p>Reach out to me if you'd like to chat :)</p>
