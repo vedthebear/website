@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import localFont from "next/font/local";
 import Link from "next/link";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
+const lmroman = localFont({
+  variable: "--font-lmroman",
+  src: [
+    { path: "./fonts/lmroman-regular-webfont.woff", weight: "400", style: "normal" },
+    { path: "./fonts/lmroman-italic-webfont.woff", weight: "400", style: "italic" },
+    { path: "./fonts/lmroman-bold-webfont.woff", weight: "700", style: "normal" },
+    { path: "./fonts/lmroman-bolditalic-webfont.woff", weight: "700", style: "italic" },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -20,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${cormorant.variable} h-full`}>
+    <html lang="en" className={`${lmroman.variable} h-full`}>
       <body className="flex min-h-full">
         <nav className="fixed top-0 left-0 h-screen flex flex-col gap-7 px-10 py-16">
           <Link href="/" className="text-4xl underline-slide">Home</Link>
