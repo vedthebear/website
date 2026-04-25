@@ -6,24 +6,24 @@ export default function ProjectsPage() {
   return (
     <main className="flex flex-col items-center px-8 py-20">
       <div className="w-full max-w-2xl">
-        <h2 className="text-5xl mb-12">Projects</h2>
-
-        <ul className="flex flex-col divide-y divide-[var(--muted)]/20">
+        <ul className="flex flex-col divide-y divide-[var(--muted)]/30">
           {projects.map((project) => (
-            <li key={project.name} className="py-8 first:pt-0 last:pb-0">
-              <p className="text-lg leading-relaxed text-[var(--foreground)]">
+            <li key={project.name} className="py-12 first:pt-0 last:pb-0">
+              <h3 className="text-2xl mb-3">
                 {project.url ? (
                   <a
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-semibold text-link"
+                    className="text-link"
                   >
                     {project.name}
                   </a>
                 ) : (
-                  <span className="font-semibold">{project.name}</span>
-                )}{" "}
+                  <span>{project.name}</span>
+                )}
+              </h3>
+              <p className="text-lg leading-relaxed text-[var(--foreground)]">
                 {project.blurb}
               </p>
             </li>
