@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import "katex/dist/katex.min.css";
 import Nav from "./nav";
 
 const lmroman = localFont({

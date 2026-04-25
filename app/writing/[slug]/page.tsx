@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 import { getAllPosts, getPost } from "@/lib/mdx";
 
 export async function generateStaticParams() {
@@ -43,7 +45,15 @@ export default async function PostPage({
         </header>
 
         <article className="prose-mdx">
-          <MDXRemote source={post.content} />
+          <MDXRemote
+            source={post.content}
+            options={{
+              mdxOptions: {
+                remarkPlugins: [remarkMath],
+                rehypePlugins: [rehypeKatex],
+              },
+            }}
+          />
         </article>
       </div>
     </main>
