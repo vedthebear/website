@@ -36,7 +36,7 @@ export default async function PostPage({
 
   return (
     <main className="flex flex-col items-center px-8 py-20">
-      <div className="w-full max-w-lg">
+      <div className="w-full max-w-4xl">
         <header className="mb-12 text-center">
           <h1 className="text-4xl mb-2">{post.title}</h1>
           <time className="text-base text-[var(--muted)]">{post.date}</time>

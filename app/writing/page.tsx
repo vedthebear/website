@@ -8,7 +8,7 @@ export default function WritingPage() {
 
   return (
     <main className="flex flex-col items-center px-8 py-20">
-      <div className="w-full max-w-2xl">
+      <div className="w-full max-w-4xl">
         {posts.length === 0 ? (
           <p className="text-[var(--muted)]">no posts yet.</p>
         ) : (

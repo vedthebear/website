@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="flex-1 flex flex-col items-center px-8 py-16">
-      <div className="w-full max-w-2xl flex flex-col gap-10">
+      <div className="w-full max-w-4xl flex flex-col gap-10">
 
         {/* Header: photo + name + socials */}
         <div className="flex items-center gap-10">
@@ -39,7 +39,7 @@ export default function Home() {
             I study mathematics and computation at UCLA. I took a break from school to move to San Francisco and join the founding team of <a href="https://usebear.ai" target="_blank" rel="noopener noreferrer" className="text-link">Bear (YC F25)</a> as an engineer. After we raised a seed round, I decided to return to UCLA to start my next chapter.
           </p>
           <p>
-            Now, I'm obsessed with applied machine learning research, specifically on language models, RL, and computer use. I think the next five years of this work are going to <a href="https://ai-2027.com/" target="_blank" rel="noopener noreferrer" className="text-link">matter a lot</a>, and I want to be close to where it's happening.
+            Now I'm obsessed with applied machine learning research, specifically on language models, RL, and computer use. I think the next five years of this work are going to <a href="https://ai-2027.com/" target="_blank" rel="noopener noreferrer" className="text-link">matter a lot</a>, and I want to be close to where it's happening.
           </p>
           <p>
             I spend most of my time these days <a href="https://github.com/vedthebear/" target="_blank" rel="noopener noreferrer" className="text-link">tinkering with Claude Code</a>, reading papers, running experiments, and <a href="https://vedere.bearblog.dev/" target="_blank" rel="noopener noreferrer" className="text-link">writing</a> about what I'm learning. Outside of that, I read a lot and play sports. I was previously a top 5 badminton player in the USA.
