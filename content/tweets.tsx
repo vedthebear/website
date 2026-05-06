@@ -10,7 +10,8 @@ export type Tweet = {
 export const tweets: Tweet[] = [
   {
     url: "https://x.com/vedvedere/status/2048186308963848554",
-    title: "thread",
-    blurb: "a short thought I posted instead of writing the essay it deserved.",
+    title: "On Modern Hackathons",
+    blurb: "An honest observation about the state of hackathons in 2026, from the eyes of a participant.",
+    date: "04/25/2026",
   },
 ];

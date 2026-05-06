@@ -12,9 +12,9 @@ export default function WritingPage() {
       <div className="w-full max-w-4xl flex flex-col gap-14">
 
         <section>
-          <h2 className="text-3xl pb-3 mb-3 border-b border-[var(--muted)]/40">Blogs</h2>
+          <h2 className="text-3xl pb-3 mb-3 border-b border-[var(--muted)]/40">Essays</h2>
           <p className="text-base leading-relaxed text-[var(--muted)] italic mb-6">
-            Longer-form essays where I work through an idea carefully.
+            Longer-form essays on ideas I've been reflecting on. 
           </p>
           {posts.length === 0 ? (
             <p className="text-[var(--muted)]">no posts yet.</p>

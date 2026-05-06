@@ -26,7 +26,7 @@ export default function Nav() {
             key={item.href}
             href={item.href}
             aria-current={active ? "page" : undefined}
-            className={`relative text-4xl underline-slide transition-colors duration-300 ${
+            className={`relative self-start text-4xl underline-slide transition-colors duration-300 ${
               active ? "text-[var(--muted)]" : ""
             }`}
           >
