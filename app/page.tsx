@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Home() {
+export default function About() {
   return (
     <main className="flex-1 flex flex-col items-center px-8 py-16">
       <div className="w-full max-w-4xl flex flex-col gap-10">
