@@ -4,7 +4,7 @@
   --background: #F6F1EB;
   --foreground: #1a1a1a;
   --muted: #888888;
-  --link: #1a5c8a;
+  --link: var(--foreground);
 }
 
 @theme inline {
@@ -81,8 +81,9 @@ body {
 }
 
 .text-link {
-  color: var(--link);
+  color: inherit;
   text-decoration: underline;
+  text-decoration-thickness: 0.5px;
   text-underline-offset: 3px;
 }
 
@@ -91,8 +92,9 @@ body {
 }
 
 .prose-mdx a {
-  color: var(--link);
+  color: inherit;
   text-decoration: underline;
+  text-decoration-thickness: 0.5px;
   text-underline-offset: 4px;
 }
 

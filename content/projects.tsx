@@ -10,7 +10,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "vero",
+    name: "Vero",
     url: "https://github.com/AbhigyaGoel/vero",
     image: "/vero.png",
     date: "2026-04",
